@@ -1,0 +1,34 @@
+@import url('sentient.css');
+
+body {
+  background-color: #FBFDFF;
+  font-family: 'Sentient-Light', Helvetica;
+  color: #1d2951;
+  margin: 25px 30px;
+} 
+
+h1 {
+  font-family: 'Sentient-Regular', Helvetica;
+  color: #5072a7;
+  letter-spacing: 1px;
+  font-size: 48;
+}
+
+h3 {
+  margin-bottom: -10px;
+  color: #446ccf;
+  font-size: 28px;
+}
+
+#date-and-title {
+  font-family: 'Sentient-Regular';
+  color: black;
+  margin-top: -15px;
+}
+
+p {
+  position: relative;
+  max-width: 612px;
+  text-align: justify;
+  justify-content: center;
+}
