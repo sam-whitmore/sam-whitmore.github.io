@@ -1,5 +1,10 @@
 @import url('sentient.css');
 
+html {
+  display: flex;
+  justify-content: center;
+}
+
 body {
   background-color: #FBFDFF;
   font-family: 'Sentient-Light', Helvetica;
@@ -9,7 +14,7 @@ body {
 
 h1 {
   font-family: 'Sentient-Regular', Helvetica;
-  color: #5072a7;
+  color: #446ccf;
   letter-spacing: 1px;
   font-size: 48;
 }
@@ -22,7 +27,7 @@ h3 {
 
 #date-and-title {
   font-family: 'Sentient-Regular';
-  color: black;
+  color: #1c2841;
   margin-top: -15px;
 }
 

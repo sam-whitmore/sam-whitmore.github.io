@@ -1,0 +1,46 @@
+@import url('sentient.css');
+
+* {
+  font-family: 'Sentient-Light';
+}
+
+.video-banner video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  min-height: 100%;
+  z-index: 0;
+}
+
+.video-banner .text-overlay {
+  position: relative;
+  top: 1vh;
+  left: 3vw;
+  font-size: 1.2vmax;
+  font-family: 'Sentient-Bold';
+  color: #d5c09c;
+  z-index: 1;
+}
+
+nav {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  right: 24px;
+  bottom: 24px;
+  padding: 12px 18px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.22);
+  background-blend-mode: lighten;
+  text-align: justify;
+  direction: rtl;
+  font-family: 'Sentient-Medium';
+  text-decoration: underline;
+  font-size: 1.8vh;
+}
+
+a {
+  font-family: 'Sentient-Light';
+  font-size: 1.6vh;
+}
