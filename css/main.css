@@ -13,10 +13,9 @@
   z-index: 0;
 }
 
-.video-banner .text-overlay {
+.text-overlay {
   position: relative;
-  top: 1vh;
-  left: 3vw;
+  left: 2vw;
   font-size: 1.2vmax;
   font-family: 'Sentient-Bold';
   color: #d5c09c;
@@ -28,7 +27,7 @@ nav {
   display: block;
   z-index: 1;
   right: 24px;
-  bottom: 24px;
+  top: 24px;
   padding: 12px 18px;
   border-radius: 18px;
   background-color: rgba(255, 255, 255, 0.22);
