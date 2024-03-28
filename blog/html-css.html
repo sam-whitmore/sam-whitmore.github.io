@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>boop: The CSS Box Model</title>
+    <link href="../css/blog.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  </head>
+
+  <body>
+
+    <div class="logo">
+      <h1 id="logo"><a href="index.html">boop.</a></h1>
+    </div>
+
+    <div>
+      <h1 id="title">The CSS Box Model</h1>
+      <h5 id="date-and-title">2024/03/28 | Week Two of Dev Academy</h5>
+    </div>
+
+    <div>
+      <h3>HTML Content and the Box Model</h3>
+      <article>
+        
+        <p>
+          Within HTML files, various elements are given <strong>content</strong> to display, such as text, images, and video. 
+          Initally, this content is always displayed within an invisble and flexible <em>box</em>, with a width, height and depth defined by the size of the provided content. 
+          This initial placement of HTML content within boxes is what is known as the <strong>box model</strong>.
+        </p>
+        <aside><em>By default, the text you are reading now would begin from the very top-left corner of the page and stretch right across the full page-width before shifting to a new line. The box wraps immediately around the text without interfering with its shape or size.</em></aside>
+        <p>
+          The dimensional aspects of an HTML element <em>(width, height and depth)</em> are the foundation of the box model.
+        </p>
+      </article>
+
+      <h3>CSS Stylesheets and the Box Model</h3>
+      <article>
+        <p>
+          To bring greater structure, clarity and flow to webpages, web developers use CSS stylesheets to define how their HTML content is displayed, changing various aspects of their content such as the size, shape, colour, and alignment with the other surrounding elements.
+        </p>
+        <aside><em>The boxes that hold each standard paragraph throughout this blog post have been centered, and their width has been restricted to a maximum of 612 pixels; furthermore, the text itself has been justified and stylised, all with the code, below:</em></aside>
+        <div class="code-segment">
+          <code>position: relative;</code>
+          <br>
+          <code>max-width: 612px;</code>
+          <br>
+          <code>text-align: justify;</code>
+          <br>
+          <code>line-height: 1.5em;</code>
+          <br>
+          <code>justify-content: center;</code>
+          <br>
+        </div>
+        <p>
+          For the purposes of this blog post, the dimensional aspect you ought to focus on is <strong>max-width: 612px</strong> as this is the aspect that constricted the width of the box. Similar code can be deployed to control the height, substituting width for height:
+        </p>
+        <div class="code-segment">
+          <code>width: </code>
+          <br>
+          <code>min-width: </code>
+          <br>
+          <code>max-width: </code>
+          <br>
+          <br>
+          <code>height: </code>
+          <br>
+          <code>min-height: </code>
+          <br>
+          <code>max-height: </code>
+        </div>
+        <p>An element's <strong>z-index</strong> represents its depth on the page, layering the elements with a higher z-index value atop the elements with a lower z-index value:</p>
+        <div class="code-segment">
+          <code>z-index: </code>
+        </div>
+      </article>
+
+      <h3>Borders</h3>
+      <article>
+        <p>
+          Once the box is appropriately defined, a web developer may elect to place a border around the box. This is achieved with the border keyword: 
+        </p>
+        <div class="code-segment">
+          <code>border: </code>
+          <br>
+          <code>border-radius: </code>
+          <br>
+          <code>border-color: </code>
+          <br>
+          <code>border-style: </code>
+          <br>
+          <code>border-top:</code>
+          <br>
+          <code>border-bottom: </code>
+          <br>
+          <code>border-left: </code>
+          <br>
+          <code>border-right: </code>
+          <br>
+        </div>
+        <p>Using the code above, borders can be set with a specific width, style, and colour. </p>
+      </article>
+
+      <h3>Padding</h3>
+      <article>
+        <p>
+          Padding is the space between the content and its border, which is initally not included; set to zero. A web developer may elect to include padding between the content and its boundary/border/box with the padding keyword:
+        </p>
+        <div class="code-segment">
+          <code>padding: </code>
+          <br>
+          <code>padding-top: </code>
+          <br>
+          <code>padding-bottom: </code>
+          <br>
+          <code>padding-left: </code>
+          <br>
+          <code>padding-right:</code>
+          <br>
+        </div>
+        <p>
+          If defining multiple padding sizes for each edge of the box, web developers may also minimise the amount of code they must write by using 'padding shorthand', which defines all of the various padding properties on a single line of code:
+        </p>
+        <div class="code-segment">
+          <code>padding: Top&Bottom, Left&Right;</code>
+          <br>
+          <code>padding: Top, Left&Right, Bottom;</code>
+          <br>
+          <code>padding: Top, Right, Bottom, Left;</code>
+          <br>
+        </div>
+      </article>
+
+      <h3>Margins</h3>
+      <article>
+        <p>
+          Margins fulfil the same role to padding, from the other side of the border. Web developers use margins to create space between the borders of various elements by increasing the size of the box's outer edge beyond its border: 
+        </p>
+        <div class="code-segment">
+          <code>margin: </code>
+          <br>
+          <code>margin-top: </code>
+          <br>
+          <code>margin-bottom: </code>
+          <br>
+          <code>margin-left: </code>
+          <br>
+          <code>margin-right:</code>
+          <br>
+        </div>
+      </article>
+
+      <h3>Summary</h3>
+      <article>
+        <p>
+          Content, padding, borders, and margin are the foundational aspects of the box model. Combined, they are utilised to efficiently and precisely arrange the various HTML elements present on any given webpage.
+        </p>
+        <img src="images/the-box-model-w3.png">
+        <p>
+          The image above, sourced from <a id="regular-link" href="https://www.w3schools.com/css/css_boxmodel.asp" >W3schools</a>, visualises the key relationships of the box model.
+        </p>
+        <p>Happy hacking!</p>
+      </article>
+    </div>
+
+  </body>
+
+  <footer>
+
+  </footer>
+
+</html>

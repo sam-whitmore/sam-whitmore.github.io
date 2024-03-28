@@ -7,13 +7,14 @@
   object-fit: cover;
   height: 100%;
   z-index: 0;
+  overflow: hidden;
 }
 
 .logo {
   position: absolute;
   top: 0px;
   left: 32px;
-  font-family: 'Sentient-Light';
+  font-family: 'Sentient-ExtraLight';
   color: #d5c09c;
   z-index: 1;
   text-decoration: none;
@@ -54,4 +55,8 @@ a {
   text-decoration: line-through;
   color: #d5c09c9b;
   pointer-events: none;
+}
+
+h6 {
+  border
 }
