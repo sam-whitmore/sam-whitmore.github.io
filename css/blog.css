@@ -18,6 +18,8 @@ body {
   left: 32px;
   z-index: 1;
   margin: 0px;
+  width: 100vw;
+  background-color: rgba(251, 253, 255, 0.9);
 }
 
 #logo {
@@ -88,4 +90,8 @@ img {
 .code-segment {
   margin: 28px;
   font-size: 16px;
+}
+
+.content {
+  padding: 2vw;
 }
