@@ -5,27 +5,40 @@ html {
   justify-content: center;
 }
 
-body {
+main {
   background-color: rgb(251, 253, 255);
   font-family: 'Sentient-Light', Helvetica;
   color: #1d2951;
   margin: 25px 30px;
 } 
 
-.logo {
-  position: fixed;
-  top: 0px;
-  left: 32px;
-  z-index: 1;
-  margin: 0px;
-  width: 100vw;
-  background-color: rgba(251, 253, 255, 0.9);
+.top-bar {
+
 }
 
-#logo {
-  font-family: 'Sentient-ExtraLight';
-  color: #d5c09c;
-  letter-spacing: 0;
+button {
+  font-family: 'Sentient-Regular';
+  font-size: 32px;
+  background-color: rgba(255, 255, 255, 0.0);
+  cursor: pointer;
+  border: none;
+  color: #1c2841;
+  text-decoration: none;
+}
+
+button::after {
+  content: '.';
+}
+
+button:hover::after {
+  content: ':';
+}
+
+.logo {
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
+  padding: 1vh 1vw;
 }
 
 #title {
@@ -90,8 +103,4 @@ img {
 .code-segment {
   margin: 28px;
   font-size: 16px;
-}
-
-.content {
-  padding: 2vw;
 }

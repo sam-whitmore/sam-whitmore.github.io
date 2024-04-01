@@ -12,29 +12,77 @@
 
 .logo {
   position: absolute;
-  top: 0px;
-  left: 32px;
-  font-family: 'Sentient-ExtraLight';
-  color: #d5c09c;
-  z-index: 1;
-  text-decoration: none;
+  top: 2vh;
+  left: 1vw;
+  padding: 1vh 1vw;
 }
 
 nav {
   position: absolute;
   display: block;
-  z-index: 1;
-  right: 24px;
-  top: 24px;
-  padding: 12px 18px;
-  border-radius: 18px;
-  background-color: rgba(251, 253, 255, 0.1);
-  background-blend-mode: lighten;
-  text-align: justify;
-  direction: rtl;
-  font-family: 'Sentient-Medium';
+  right: 0vw;
+  top: 2vh;
+  padding: 1vh 1vw;
+  font-family: 'Sentient-ExtraLight';
   font-size: 24px;
-  color: #1d2951;
+  display: flex;
+}
+
+.nav-container {
+  position: relative;
+}
+
+button {
+  font-family: 'Sentient-Regular';
+  font-size: 32px;
+  background-color: rgba(255, 255, 255, 0.0);
+  cursor: pointer;
+  border: none;
+  color: #1c2841;
+  text-decoration: none;
+}
+
+button::after {
+  content: '.';
+}
+
+button:hover::after {
+  content: ':';
+}
+
+.nav-section {
+  text-align: right;
+  position: relative;
+  margin: 0vh 1vw;
+}
+
+
+.nav-subsection {
+  height: 100%; /* change this to 100% to view nav-subsections; 0 to hide. */
+  overflow: hidden;
+}
+
+.nav-subsection-button {
+  font-family: 'Sentient-Light';
+  font-size: 20px;
+  border: none;
+  direction: ltr;
+}
+
+.nav-subsection-button:hover {
+  text-decoration: underline;
+}
+
+.nav-subsection-button:after {
+  content: none;
+}
+
+.nav-subsection-button:hover::after {
+  content: none;
+}
+
+.nav-subsection-content {
+  font-family: 'Sentient-ExtraLight';
 }
 
 a {
@@ -43,15 +91,14 @@ a {
 }
 
 .released {
-  font-family: 'Sentient-Light';
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 16px;
   color: #446ccf;
 }
 
 .unreleased {
   font-family: 'Sentient-ExtralightItalic';
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: line-through;
   color: #d5c09c9b;
   pointer-events: none;
