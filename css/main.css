@@ -1,5 +1,13 @@
 @import url('sentient.css');
 
+html {
+  display: flex;
+}
+
+body {
+  margin: 0;
+}
+
 .video-banner video {
   position: fixed;
   top: 0;
@@ -10,11 +18,14 @@
   overflow: hidden;
 }
 
+.top-bar {
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+
 .logo {
-  position: absolute;
-  top: 2vh;
-  left: 1vw;
-  padding: 1vh 1vw;
+  padding: 2vh 2vw;
 }
 
 nav {

@@ -2,17 +2,33 @@
 
 html {
   display: flex;
-  justify-content: center;
+}
+
+body {
+  margin: 0;
 }
 
 main {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  max-width: 612px;
+  padding: 0em 4em;
   font-family: 'Sentient-Light', Helvetica;
   color: #1d2951;
-  margin: 25px 30px;
+  justify-content: center;
 } 
 
 .top-bar {
-
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  background: linear-gradient(to bottom,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(255, 255, 255, 0.0) 100%
+  );
 }
 
 button {
@@ -34,10 +50,7 @@ button:hover::after {
 }
 
 .logo {
-  position: absolute;
-  top: 2vh;
-  left: 1vw;
-  padding: 1vh 1vw;
+  padding: 2vh 2vw;
 }
 
 #title {
@@ -65,7 +78,6 @@ h3 {
 
 p {
   position: relative;
-  max-width: 612px;
   text-align: justify;
   justify-content: center;
   line-height: 1.5em;
