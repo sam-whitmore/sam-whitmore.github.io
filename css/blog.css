@@ -13,9 +13,10 @@ main {
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vw;
+  width: 70vw;
   max-width: 612px;
-  padding: 0em 4em;
+  margin-left: 55px;
+  margin-right: 5px;
   font-family: 'Sentient-Light', Helvetica;
   color: #1d2951;
   justify-content: center;
