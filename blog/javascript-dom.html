@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>boop: JavaScript and the DOM</title>
+    <link href="../css/blog.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+
+    <div class="top-bar">
+
+      <div>
+        <button class="logo"><a href="../index.html">boop</a></button>
+      </div>
+
+    </div>
+    
+    <main>
+      <div>
+        <h1 id="title">JavaScript and the DOM</h1>
+        <h5 id="date-and-title">2024/04/05 | Week Three of Dev Academy | by Sam Whitmore</h5>
+      </div>
+
+      <div>
+        <h3>Integrating JavaScript with HTML and CSS</h3>
+        <article>
+          <p>
+            While HTML and CSS are the foundation of the internet, the web pages that these languages can create are ultimately rather static and very limitedly interactive. 
+            Thus, modern webpages rely on the JavaScript language to implement scripts of code to provide a far greater depth and breadth of interactivity and responsiveness. 
+          </p>
+          <p>
+            With JavaScript, web developers can change the behaviour of their web applications based on the inputs of the user. For example, if the user input their username and password into the required (HTML) fields, JavaScript could process this information and eventually sign the user into their account, consequently personalising the entire web page – from the minute details, such as what text appears, to the fundamental user experience by activating and deactivating what features and facilities are made accessible. 
+          </p>
+          <p>
+            An loose analogy may be drawn between the trio of HTML, CSS, and JavaScript and the human body: 
+            <ul>
+              <li>HTML is comperable the skeleton;</li>
+              <li>CSS is comperable to the skin (and other visible features); and</li>
+              <li>JavaScript is comperable to the muscular system.</li>
+            </ul>
+            With this analogy in mind, JavaScript is an essential component of any modern web application striving for smooth flows of information and a lively user experience. 
+          </p>
+        </article>
+        <article>
+          <h3>What is Control Flow?</h3>
+          <p>
+            To gain a crisp understanding of how one might implement JavaScript, it is imperative to understand control flow. 
+          </p>
+          <p>
+            JavaScript is an imperative programming language, meaning it is a language that uses statements that change a program's state. Imperative languages focus, in granular detail, on how the program ought to function – step-by-step.
+            The logic that determines the sequential order and flow of the operations is what is known as control flow.
+          </p>
+        </article>
+        <article>
+          <h3>Loops as an Example of Control Flow</h3>
+          <p>
+            Loops are a sequence of statements which are stated once but executed multiple times. There are two key components of a codefied loop:
+            <ul>
+              <li>The Shell</li>
+              <li>The Body</li>
+            </ul>
+            Full disclosure: I'm not sure if that is the correct terminology, but it will suit for the purposes of this blog entry.
+          </p>
+          <p>
+            The shell of a loop defines the behaviour of the looping itself, such as where to begin and end counting of the loops from and how many iterations of the code it ought to loop through. 
+          </p>
+          <code class="code-segment">
+            for (i = 0; i < 5; i++) {
+            }
+          </code>
+          <p>
+            The exemplar code, above, is a <code>for</code> loop, meaning it will loop <code>for</code> a fixed, given amount of iterations. 
+          </p>
+          <p>
+            From left-to-right, the three segments of code within the parentheses determine 1) what number to begin counting from (in this case, zero), 2) how many times to loop (in this case, so long as our iterator (i) is less than five), and 3) how we ought to count each loop (in this case, increasing the iterator by one, each time we complete a loop).
+          </p>
+          <p>
+            The body of the loop is the operation that we want to execute every time we run through the loop. This code is written within the curly-shaped brackets that look like this: <code>{ }</code>. 
+          </p>
+          <p>
+            The granular of detail displayed within this code is exemplary of the imperative nature of JavaScript. The order and flow of operations is completely deterministic and, thus, the developer is in complete control of the logical flows that shape their code.
+          </p>
+          <p>
+            But loops aren't just in code, y'know; loops are everywhere in life as they're fundamentally attached to the logic that underpins codefied operations, rather than the code itself. 
+          </p>
+          <aside>
+            An obvious example from your real life is brushing of your teeth. This is a task that demands multiple repetitions of the same operation (in this case, brushes) and, thus, we find ourselevs in a loop. 
+          </aside> 
+          <br>
+          <aside>
+            This may be pedantic but, for argument's sake, each you may brush each tooth ten times before moving on to the next tooth. The loop may begin at the most top-left tooth and progress horizontally across the front of the top-row teeth and then shift to the back-side, before then shifting to the bottom rom and repeating the sequence. 
+          </aside> 
+        </article>
+        <article>
+          <h3>Functions</h3>
+          <p>
+            If you had to methodically; painstakingly reiterate this process – every single brush; every single day – you'd explode; but, thankfully, our minds are capable of grouping each individual action into groups of similar types to the point that we can simply call it "brushing our teeth."
+          </p>
+          <p>
+            This is essentially the definition of a function; it is a collection of code that we can invoke with a single line, such as <code>brushTeeth()</code>, instead of having to rewrite the sequence each time we wanted to logically flow through the process. 
+          </p>
+        </article>
+        <article>
+          <h3>What is the DOM?</h3>
+          <p>
+            The DOM stands for the Document Object Model, and it is the framework that internet browsers use to seamlessly display complex JavaScript code.
+          </p>
+          <p>
+            Browsers provide a <code>document</code> JavaScript object within their browser's <code>window</code>. This <code>document</code> object provides web developers with a significant amount of interactivity and functionality through the object's accompanying properties and methods. 
+          </p>
+          <p>
+            Fundamentally, the DOM produces a tree-like structure than becomes more specific and granular as the code is located further from the 'root' of the tree (which, in this case, is the <code>window</code> object that contains the <code>document</code> object). The <code>document</code> object contains our <code>html</code> element, which subsequently contains the code specific to the web site's display and performance. 
+          </p>
+          <p>
+            Two foundational methods that accompany the <code>document</code> object are <code>.getAttribute()</code> and <code>.setAttribute()</code>. 
+          </p>
+          <p>
+            Once an HTML element has been selected (using the <code>.querySelector()</code> method), a web developer can use <code>.getAttribute()</code> to identify an attribute such as an element's <code>class</code>, <code>id</code> or <code>type</code> to then use within their scripts when they call other methods (that will subsequently change the DOM).
+          </p>
+          <p>
+            Conversely, a web developer can use <code>.setAttribute()</code> to change the value of an element's attribute. This is powerful as, when combined with CSS, this simple operation can change the visibility and appearance of the element completely.
+          </p>
+          <p>
+            Following the wisdom of _______, you can be sure that almost every DOM change will either 1) set a property or 2) call a method; and between these two meta-methods, both of these changes are possible. 
+          </p>
+          </article>
+        <article>
+          <h3>Accessing Data from Arrays</h3>
+          <p>
+            Arrays are an named collection of values that are ordered by an index starting from zero (0). If you had a collection of various fruits, you would name the collection exactly that: <code>fruits</code>, and each fruit within the collection would have a corresponding integer, such as <code>fruits[0] = apple</code> and <code>fruits[1] = banana</code>. 
+          </p>
+          <aside>
+            The array described above would be: <code>let fruits = [apple, banana, orange, pear, mandarin]</code>.
+          </aside>
+        </article>
+        <article>
+          <h3>Accessing Data from Objects</h3>
+          <p>
+            Objects are similar to arrays, except the collection of data within the object has a key paired with each value. An exemplar object is shown below:
+          </p>
+          <code class="code-segment">let contact = {</code>
+          <br>
+          <code class="code-segment">name: "Matthew"</code>
+          <br>
+          <code class="code-segment">age: 23</code>
+          <br>
+          <code class="code-segment">address: "123 Park Lane"</code>
+          <br>
+          <code class="code-segment">}</code>
+          <br>
+          <p>
+            Data is accessed from objects by specifying the key that is associated with the object; so, if I wanted to access the contact's name, I would write either <code>contact.name</code> or <code>contact["name"]</code>, both of which would return the assigned value: <code>"Matthew"</code>.
+          </p>
+          <p>
+            Following the examples of an array and an object, above, were selected to demonstrate the strengths and weaknesses of each JavaScript feature. Arrays are better suited for collections of values that are of the same type (in this case, fruit). Objects, on the other hand, are better suited for grouping data of various types (in this case, contact information including names and numbers). 
+          </p>
+          <p>
+            Happy hacking!
+          </p>
+        </article>
+      </div>
+    </main>
+
+  </body>
