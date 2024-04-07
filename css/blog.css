@@ -123,3 +123,14 @@ img {
   margin: 28px;
   font-size: 16px;
 }
+
+table {
+  position: relative;
+  width: 612px;
+  max-width: 98vw;
+  border: 1px solid;
+}
+
+th, td {
+  border: 1px solid;
+}
