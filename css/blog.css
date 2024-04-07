@@ -100,6 +100,11 @@ a {
   text-decoration: none;
 }
 
+.inline-link {
+  color: #446ccf;
+  text-decoration: underline;
+}
+
 #regular-link {
   color: #446ccf;
 }
