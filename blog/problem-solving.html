@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>boop: Problem Solving</title>
+    <link href="../css/blog.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+
+    <div class="top-bar">
+
+      <div>
+        <button class="logo"><a href="../index.html">boop</a></button>
+      </div>
+
+    </div>
+    
+    <main>
+      <div>
+        <h1 id="title">Problem Solving</h1>
+        <h5 id="date-and-title">2024/04/08 | Week Four of Dev Academy | by Sam Whitmore</h5>
+      </div>
+
+      <div>
+        <article>
+          <h3>JavaScript Kata</h3>
+          <p>
+            This week, I worked through a gauntlet of JavaScript coding challenges called JavaScript Kata, so named after the Japanese concept, meaning "form." Commonly used in the realm of martial arts, kata refers to detailed, choreographed, repetitive movements that are practiced alone.
+          </p>
+          <aside>
+            In the Karate Kid, themes of kata arise when Mr. Miyagi tasks the main character, Daniel, with seemingly non-karate-related household chores. These tasks, such as waxing cars, sanding floors, amd painting with vertical and horizontal strokes, each have specific rhythmic patterns that share movements with the foundation of karate. Kata is thus reflected in the commonly quoted: <em>"Wax on; wax off."</em>
+          </aside>
+          <br>
+          <aside>
+            In addition, kata is reflected in the Bruce Lee quote: <em>"I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."</em>
+          </aside>
+          <h3>Practicing Problem Solving</h3>
+          <p>
+            At one stage of the gauntlet, I had to define three new objects inside another empty JavaScript object which was already inside another JavaScript object!
+          </p>
+          <aside>
+            From the top-down, or outside-in: I had a mother (terah) and she had children (terah.children), and I needed to add their names (ben, wilson, and felicia) to this inner (children) object; but, what's more, is that the children also needed to be objects, as the logical flows may necessitate that they have their own properties in the future. 
+          </aside>
+          <p>
+            The solution ended up being much simpler than I anticipated...
+          </p>
+          <code class="code-segment">terah.children.ben = {}</code>
+          <br>
+          <code class="code-segment">terah.children.wilson = {}</code>
+          <br>
+          <code class="code-segment">terah.children.felicia = {}</code>
+          <br>
+          <p>
+            ...but I surely spent ages workshopping countless convoluted solutions that got me nowhere. 
+          </p>
+          <p>
+            What helped me find the solution was a calm demeanour and flexibility in my approach. The remember finding the answer mere seconds after I deleted the entirety of my last attempt. Had I been unwilling to let go of my previous efforts, I would have continued to be frustrated and eventually would have become demoralised. 
+          </p>
+          <p>
+            In addition, I repeatedly consulted my notes and the instructions laid out above each challenge. Google proved to be of great support, helping me to find common solutions to common puzzles on <a class="inline-link" href="https://developer.mozilla.org/en-US/">MDN</a> and <a class="inline-link" href="https://stackoverflow.com">Stack Overflow</a>.
+          </p>
+          <h3>Finding Elegant Solutions</h3>
+          <p>
+            At the end of section 4, titled gradebook, I reckon I found the most elegant solution to the final, seventh question, which was optional – for those who wanted to stretch their understanding of the material. 
+          </p>
+          <p>
+            Having just completed six prior questions, question seven effectively challenged me to create a single JavaScript function that completes questions one-through-six in one fell swoop. Given three parameters: a newly minted 'gradebook' object, a array of students' names, and an array of their corresponding scores, the function had to populate the newly minted gradebook; and I'm proud to say that I completed this challenge in a single <code>for</code> loop, consuming just five lines of code!* 
+            <br>
+            <em>*(excluding closing brackets)</em>
+          </p>
+          <p>
+            It's hard to say I used any problem solving techniques, as I solved it on my first attempt; though I surely wouldn't have accomplished this without using several problem solving techniques in earlier parts of the challenge.
+          </p>
+          <p>
+            I felt like I was in a state of flow, steadily controlling the processing of the raw inputs of data, one step at a time; one line of code at a time. I've learned that writing elegant code is really enjoyable and that logical programming becomes an exponentially powerful tool by simply combining the primitives and foundational methodology together. 
+          </p>
+          <h3>My Confidence with Problem Solving Techniques</h3>
+          <h4>Psuedocode</h4>
+          <p>
+            I am yet to tangibly experiment with psuedocode, though I'm sure that the same process is occurring in my mind as I'm attempting to solve each challenge I find. Once the coding challenges become too great to hold within my mind at any one time, I'll be sure to begin psuedocoding.
+          </p>
+          <h4>Giving it a Go</h4>
+          <p>
+            I've become quite confident with this approach; I feel like I know what I'm attempting to do, so, in tandem with Google, I'm able to ask quality questions that have practical answers. 
+          </p>
+          <h4>The Rubber Ducky Method</h4>
+          <p>
+            The Rubber Ducky method is the act of talking to an inanimate object as if in conversation with another person. The act of talking a problem through is an easy way to recognise one's pitfalls regarding their understanding of an issue, and thus highlights the questions one ought to ask to begin hunting for a solution. 
+          </p>
+          <p>
+            I feel somewhat confident in this approach as I live alone, so I don't feel embarrassed at the absurdity of the methodology. I ought not to feel embarrassed, regardless, but I thankfully won't have to cross that bridge until another chapter of life!
+          </p>
+          <h4>Reading Error Messages</h4>
+          <p>
+            Error messages are generally overwhelming at this early stage of my career, but I know they're intended to be succinctly informative and helpful – so I plan to continue reading them whenever they arise, and I suspect I'll steadily become more comfortable with this problem-solving process, in due time.
+          </p>
+          <h4>Console Logging</h4>
+          <p>
+            I've tried to implement this technique, but haven't been able to find the console where the code segments would be logged to. It's quite frustrating, to be honest, because I know this technique resonates with my perspective towards my code. I should ask for support on this...
+          </p>
+          <h4>Googling</h4>
+          <p>
+            Google has been an incredibly rich source of knowledge as I've undertaken my learning journey. The downsides I see to this technique is that I often find a working solution to the challenges before me without a coherent understanding of the solution... This often leads me down rabbit-holes of JavaScript syntax as I attempt to understand what I just did, and sometimes returning to my now-incomprehensible code frustrated and confused.
+          </p>
+          <h4>Asking My Peers for Help</h4>
+          <p>
+            My peers in this course are nothing but friendly, welcoming folk. I'm 100% comfortable asking questions in the Dev Academy Discord server, and happy to receive solution suggestions from my peers.
+          </p>
+          <h4>Asking Coached for Help</h4>
+          <p>
+            In addition to the previous section, I'm also comfortable asking for help from the Dev Academy coaches. They are clearly knowledgable about this industry and prompt in their response time. I wish I could have them in the room with me so we could have more elaborate discussions about this industry and my progress, but the limitations of this virtual learning model posesses strengths, too, promoting self-sufficiency, for example.
+          </p>
+          <h4>Reflection</h4>
+          <p>
+            I'm a generally reflective person, so am comfortable with this problem-solving technique. I will be reviewing my code from earlier today, later in the week, and searching for similar gauntlets to undertake, in future. Someone in the Discord, last week, asked if anyone dreams in code, and several people responded saying that is normal. I am yet to dream of code, though, considering my dreaming history, I suspect this will begin soon! I see this as a seeply reflective practice, as the lessons of this journey are integrated further into my psyche.
+          </p>
+          <p>
+            In summary, I look forward to seeing how these lessons will shape me.
+          </p>
+          <hr>
+          <p>Happy hacking!</p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

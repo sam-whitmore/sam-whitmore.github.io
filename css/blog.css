@@ -71,9 +71,15 @@ h3 {
   font-size: 28px;
 }
 
+h4 {
+  margin-bottom: -15px;
+  color: #264694;
+  font-size: 20px;
+}
+
 #date-and-title {
   font-family: 'Sentient-ExtraLight';
-  color: #1c2841;
+  color: #264694;
   margin-top: -15px;
   letter-spacing: 1px;
 }
@@ -122,6 +128,7 @@ img {
 .code-segment {
   margin: 28px;
   font-size: 16px;
+  color: #264694;
 }
 
 table {
@@ -133,4 +140,8 @@ table {
 
 th, td {
   border: 1px solid;
+}
+
+hr {
+  border-top: 1px solid #264694;
 }
