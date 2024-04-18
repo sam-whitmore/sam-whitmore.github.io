@@ -41,6 +41,10 @@ nav {
 
 .nav-container {
   position: relative;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 button {
@@ -57,8 +61,18 @@ button::after {
   content: '.';
 }
 
-button:hover::after {
-  content: ':';
+@media (hover: hover) {
+  /* targets only devices that can hover */
+
+}
+
+@media (hover: none) {
+  /* targets only devices that can not hover */
+
+  button:hover::after {
+    content: ':';
+  }
+
 }
 
 .nav-section {
